@@ -1,0 +1,22 @@
+/* Cart & Wishlist */
+.page-container {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(159deg, rgba(0,128,128,1) 0%, rgba(0,153,144,1) 100%);
+    min-height: 100vh;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 32px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0.8;
+}

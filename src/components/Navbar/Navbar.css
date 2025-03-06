@@ -1,0 +1,146 @@
+/* Navbar Layout */
+.navbar {
+    background: linear-gradient(159deg, rgba(0,128,128,1) 0%, rgba(0,153,144,1) 100%);
+    color: #FFECEF;            /* Lightest accent */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #FFCACA;
+    position: relative;
+    }
+    
+    /* Left Section - Hamburger Menu */
+    .menu-btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+    
+    .menu-btn:hover {
+        transform: scale(1.1);
+    }
+    
+    .menu-btn svg {
+        color: #FFECEF;
+    }
+    
+    /* Dropdown Menu */
+    .dropdown {
+        position: absolute;
+        top: 60px; /* Positioned below navbar */
+        left: 0;
+        width: 50vw;
+        background-color: cadetblue;
+        max-width: 300px;
+        border: 2px solid #dedcdc; /* Accent outline */
+        border-radius: 10px;
+        padding: 15px;
+        z-index: 250;
+        animation: fadeIn 0.3s ease;
+    }
+    
+    .dropdown a {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: #FFECEF;
+        text-decoration: none;
+        border-radius: 8px;
+        border: 1px solid #FFCACA;
+        transition: background-color 0.3s ease;
+    }
+    
+    .dropdown a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Center Section - Logo and Search */
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #FFECEF;
+        text-transform: uppercase;
+    }
+    
+    .search {
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 1px solid #FFCACA;
+        outline: none;
+        color: #FFECEF;
+        width: 250px;
+        transition: border 0.3s ease;
+    }
+    
+    .search::placeholder {
+        color: #cccaca;
+    }
+    
+    .search:focus {
+        border-color: #FFECEF;
+    }
+    
+    /* Right Section - Icons */
+    .navbar-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .icon-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #FFECEF;
+        transition: color 0.3s ease;
+    }
+    
+    .icon-link:hover {
+        color: #FFCACA;
+    }
+    
+    /* Menu Icon Styles */
+    .menu-icon {
+        color: #FFCACA;
+    }
+    
+    /* Fade In Animation */
+    @keyframes fadeIn {
+        from {
+        opacity: 0;
+        transform: translateY(-10px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        }
+    
+        .navbar-center {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        }
+    
+        .search {
+        width: 100%;
+        }
+    
+        .dropdown {
+        width: 80vw;
+        }
+    }

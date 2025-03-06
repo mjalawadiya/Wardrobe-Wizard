@@ -1,0 +1,49 @@
+/* Global background color */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(159deg, rgba(0,128,128,1) 0%, rgba(0,153,144,1) 100%);;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+/* Carousel container */
+.carousel-container {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgbargba(0,128,128,1);
+}
+
+/* Carousel item styling */
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+/* Category Page - Product Container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Product Card */
+.product-card {
+  background: #12353c;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
